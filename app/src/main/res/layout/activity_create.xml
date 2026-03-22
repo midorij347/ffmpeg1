@@ -116,9 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:enabled="false"
-            app:valueFrom="0.0"
-            app:valueTo="100.0" />
+            android:enabled="false" />
 
         <!-- クリップの長さ表示 -->
         <TextView
