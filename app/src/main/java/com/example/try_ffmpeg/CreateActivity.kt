@@ -2,7 +2,7 @@ package com.example.try_ffmpeg
 
 import android.net.Uri
 import android.os.Bundle
-import android.os.PersistableBundle
+
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
@@ -22,8 +22,8 @@ class CreateActivity:AppCompatActivity() {
         } ?: Log.e("FFmpegTest", "❌ 動画が選ばれませんでした")
     }
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create)
         // ボタンで動画選択を起動
         findViewById<Button>(R.id.selectButton).setOnClickListener {
